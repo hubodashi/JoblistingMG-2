@@ -5,55 +5,41 @@
   <title>Bootstrap Theme Company Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#pricing">PRICING</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+
 
 <div class="jumbotron text-center">
-  <h1>Company</h1>
-  <p>We specialize in blablabla</p>
-  <form>
-    <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Subscribe</button>
-      </div>
-    </div>
-  </form>
+  <div class="transbox">
+   <h1>iCall招聘</h1>
+   <p>业内最专业的招聘信息平台,我们与您心意相连，为您助力梦想！</p>
+   <p>现在，您和好工作就差一个“点击”:</p>
+  </div>
+  <a href="/jobs"><button class="btn btn-primary btn-lg">马上应征</button></a>
 </div>
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
-      <h2>About Company Page</h2><br>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <br><a href="/jobs"><button class="btn btn-default btn-lg">马上应征</button></a>
+      <h2>关于我们</h2><br>
+      <h4>iCall招聘是中国领先的职业发展平台，为用户的整个职业生涯提供相关职业及发展机会。</h4><br>
+      <p>成立于1990年的iCall招聘，是国内首屈一指的人力资源服务商，率先将国际先进的人力资源服务理念与
+        经验同中国迅速发展的人才市场实际情况相结合，确保专业、迅速、准确地为企业找到合适人才。通过与搜索引擎、联盟、社交网络等合作，
+        全方位、多渠道锁定各职业发展阶段的求职人群。同时在全国拥有32家分公司，南北两大互动营销中心，
+        覆盖100多座城市，形成“线上+线下+无线”联动的招聘平台。</p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-signal logo"></span>
+      <span class="glyphicon slideanim">
+      <img src="http://localhost:3000/images/progress-report.png" alt="progress-report" width=70% height=auto>
+      </span>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon slideanim">
+        <img src="http://localhost:3000/images/entrepreneur.jpg" alt="entrepreneur" width=70% height=auto>
+      </span>
     </div>
   </div>
 </div>
@@ -61,182 +47,196 @@
 <div class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+      <span class="glyphicon slideanim">
+      <p><img src="http://localhost:3000/images/entrepreneur1.jpg" alt="entrepreneur1" width=100% height=auto></p>
+      <p><img src="http://localhost:3000/images/timegrowth.jpg" alt="timegrowth" width=100% height=auto></p>
+      </span>
     </div>
     <div class="col-sm-8">
-      <h2>Our Values</h2><br>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h2>我们的价值</h2><br>
+      <h4><strong>愿景:</strong> iCall招聘积极进行战略转型，以覆盖求职者整个职业生涯为出发点，打造“3的三次方”产品模型，
+        即为学生、白领、高端（专业人士或管理人士），匹配3类产品：测评（我是谁）、网络招聘（我能干什么）、教育培训（我如何进步），
+        并通过线上、线下、无线三个渠道，为职场人的全面发展打造平台。从而实现从“简历仓库”到“人才加工厂”的战略转型，为中国人才市场打造一个闭环生态链。
+      </h4><br>
+      <p><strong>人才储备:</strong> 20年人才储备历史，iCall拥有强大的白领人才库，截至2015年9月30日，iCall招聘拥有1.048亿注册用户，
+        平均学历及综合素质为行业内领先，同时在优质人才群体中拥有极高的忠诚度,力争打造全领域覆盖的尖端人力资源平台。</p>
     </div>
   </div>
 </div>
 
 <!-- Container (Services Section) -->
 <div id="services" class="container-fluid text-center">
-  <h2>SERVICES</h2>
-  <h4>What we offer</h4>
+  <h2>职位</h2>
+  <h4>热门类别</h4>
   <br>
   <div class="row slideanim">
+    <a href="/jobs?d=技术">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>POWER</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <span class="glyphicon"><img src="http://localhost:3000/images/technology.png" alt="technlogy" width=100% height=auto></span>
+      <h4>技术</h4>
+      <p>Technology</p>
     </div>
+   </a>
+   <a href="/jobs?d=产品">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>LOVE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <span class="glyphicon"><img src="http://localhost:3000/images/product.png" alt="product" width=100% height=auto></span>
+      <h4>产品</h4>
+      <p>Product</p>
     </div>
+   </a>
+   <a href="/jobs?d=设计">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>JOB DONE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <span class="glyphicon"><img src="http://localhost:3000/images/design.png" alt="design" width=100% height=auto></span>
+      <h4>设计</h4>
+      <p>Design</p>
     </div>
+   </a>
   </div>
   <br><br>
   <div class="row slideanim">
+    <a href="/jobs?d=运营">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>GREEN</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+        <span class="glyphicon"><img src="http://localhost:3000/images/operation.png" alt="operation" width=100% height=auto></span>
+      <h4>运营</h4>
+      <p>Operation</p>
     </div>
+    </a>
+    <a href="/jobs?d=市场">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4>CERTIFIED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <span class="glyphicon"><img src="http://localhost:3000/images/marketing.png" alt="marketing" width=100% height=auto></span>
+      <h4>市场</h4>
+      <p>Marketing</p>
     </div>
+   </a>
+   <a href="/jobs">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <span class="glyphicon"><img src="http://localhost:3000/images/alljobs.png" alt="all jobs" width=100% height=auto></span>
+      <h4 style="color:#303030;">所有职位</h4>
+      <p>All Jobs</p>
     </div>
+  </a>
   </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2><br>
-  <h4>What we have created</h4>
+  <h2>实际成果</h2><br>
+  <h4>用事实说话</h4>
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
+        <img src="http://localhost:3000/images/beijing.jpg" alt="Beijing" width="400" height="300">
+        <p><strong>在北京</strong></p>
+        <p>上年度完成招聘人数：1000+</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
+        <img src="http://localhost:3000/images/shanghai.jpg" alt="Shanghai" width="400" height="300">
+        <p><strong>在上海</strong></p>
+        <p>截止目前合作企业：500+</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
+        <img src="http://localhost:3000/images/guangzhou.jpg" alt="Guangzhou" width="400" height="300">
+        <p><strong>在广州</strong></p>
+        <p>当地人力资源运营年限：10+</p>
       </div>
     </div>
-  </div><br>
+  </div>
 
-  <h2>What our customers say</h2>
+  <h2>我们的顾客说</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+    <div class="row text-center slideanim"><!--class="carousel-inner" role="listbox"-->
+      <div class="col-sm-4"><!--class="item active"-->
+        <h4>"通过iCall招聘，我不仅找到了我的工作，更找到了我的生活和事业。"<br><span>北京，销售总监，27岁</span></h4>
       </div>
-      <div class="item">
-        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+      <div class="col-sm-4"><!--class="item"-->
+        <h4>"在求职上，你没法在别处找到更多!"<br/><br/><span>上海，应届毕业生，22岁</span></h4>
       </div>
-      <div class="item">
-        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+      <div class="col-sm-4"><!--class="item"-->
+        <h4>"我对iCall招聘的遗憾就是没有更早的找到它。"<br><span>广州，人力资源主管，36岁</span></h4>
       </div>
     </div>
 
     <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <div>
       <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    </div>
       <span class="sr-only">Next</span>
-    </a>
   </div>
 </div>
 
 <!-- Container (Pricing Section) -->
 <div id="pricing" class="container-fluid">
   <div class="text-center">
-    <h2>Pricing</h2>
-    <h4>Choose a payment plan that works for you</h4>
+    <h2>合作企业</h2>
+    <h4>好的企业，是好的职业开端</h4>
   </div>
   <div class="row slideanim">
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1>Basic</h1>
+          <h1><img src="http://localhost:3000/images/baidu.jpg" alt="baidu" width=100% height=auto></h1>
         </div>
         <div class="panel-body">
-          <p><strong>20</strong> Lorem</p>
-          <p><strong>15</strong> Ipsum</p>
-          <p><strong>5</strong> Dolor</p>
-          <p><strong>2</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
+          <p><strong>java开发工程师</strong>地点：北京</p>
+          <p><strong>售前经理</strong>地点：北京</p>
+          <p><strong>产品经理</strong>地点：上海</p>
+          <p><strong>互联网开发总监</strong>地点：上海</p>
+          <p><strong>... ...</strong></p>
         </div>
         <div class="panel-footer">
-          <h3>$19</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
+          <h3>合作年限</h3>
+          <h4>6年+</h4>
+          <a href="/jobs?e=百度">
+          <button class="btn btn-lg">马上得到</button>
+         </a>
         </div>
       </div>
     </div>
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1>Pro</h1>
+          <h1><img src="http://localhost:3000/images/tencent.jpg" alt="tencent" width=100% height=auto></h1>
         </div>
         <div class="panel-body">
-          <p><strong>50</strong> Lorem</p>
-          <p><strong>25</strong> Ipsum</p>
-          <p><strong>10</strong> Dolor</p>
-          <p><strong>5</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
+          <p><strong>算法研发工程师</strong>地点：北京</p>
+          <p><strong>软件总监</strong>地点：北京</p>
+          <p><strong>高级Java开发工程师</strong>地点：深圳</p>
+          <p><strong>UI设计师</strong>地点：广州</p>
+          <p><strong>... ...</strong></p>
         </div>
         <div class="panel-footer">
-          <h3>$29</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
+          <h3>合作年限</h3>
+          <h4>7年+</h4>
+          <a href="/jobs?e=腾讯">
+          <button class="btn btn-lg">马上得到</button>
+          </a>
         </div>
       </div>
     </div>
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1>Premium</h1>
+          <h1><img src="http://localhost:3000/images/alibaba.jpg" alt="alibaba" width=100% height=auto></h1>
         </div>
         <div class="panel-body">
-          <p><strong>100</strong> Lorem</p>
-          <p><strong>50</strong> Ipsum</p>
-          <p><strong>25</strong> Dolor</p>
-          <p><strong>10</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
+          <p><strong>零售通事业部-招商专家</strong>地点：厦门</p>
+          <p><strong>城市经理</strong>地点：惠州</p>
+          <p><strong>阿里巴巴零售通城市经理</strong>地点：河源</p>
+          <p><strong>培训专员</strong>地点：杭州</p>
+          <p><strong>... ...</strong></p>
         </div>
         <div class="panel-footer">
-          <h3>$49</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
+          <h3>合作年限</h3>
+          <h4>5年+</h4>
+          <a href="/jobs?e=阿里巴巴">
+          <button class="btn btn-lg">马上得到</button>
+          </a>
         </div>
       </div>
     </div>
@@ -245,13 +245,13 @@
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
+  <h2 class="text-center">联系我们</h2>
   <div class="row">
     <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+      <p>我们将在24小时内回复您。</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> 北京, 中国</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +86 400 888888</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> 123@4567.com</p>
     </div>
     <div class="col-sm-7 slideanim">
       <div class="row">
@@ -272,29 +272,8 @@
   </div>
 </div>
 
-<!-- Add Google Maps -->
-<div id="googleMap" style="height:400px;width:100%;"></div>
-<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
 
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
-</footer>
+
 
 <script>
 $(document).ready(function(){
