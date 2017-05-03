@@ -5,6 +5,9 @@ class User < ApplicationRecord
   def admin?
     is_admin
   end
+  def manger?
+   is_manger
+  end
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 end

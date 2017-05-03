@@ -36,6 +36,9 @@
             <% if current_user.admin? %>
             <li> <%= link_to("Admin Panel", admin_jobs_path) %> </li>
             <% end %>
+            <% if current_user.manger? %>
+            <li> <%= link_to("Manger Panel", manger_advises_path) %> </li>
+            <% end %>
             <li> <%= link_to("登出", destroy_user_session_path, method: :delete) %> </li>
           </ul>
         </li>

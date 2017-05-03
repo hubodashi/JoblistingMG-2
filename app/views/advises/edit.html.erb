@@ -1,0 +1,9 @@
+<h1> Edit an advise </h1>
+
+<%= simple_form_for @advise do |f| %>
+
+<%= f.input :name %>
+<%= f.input :email %>
+<%= f.input :comment %>
+  <%= f.submit "Submit" %>
+<% end %>

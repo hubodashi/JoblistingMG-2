@@ -1,0 +1,16 @@
+<table class="table table-bordered">
+  <% @advises.each do |advise| %>
+  <tr>
+    <td>
+      <%= link_to(advise.name, manger_advise_path(advise)) %>
+    </td>
+    <td>
+      <%= link_to("Edit", edit_manger_advise_path(advise)) %>
+      <%= link_to("Destroy", manger_advise_path(advise), :method => :delete, :data => { :confirm => "Are you sure?" }) %>
+    </td>
+    <td>
+      <%= advise.created_at %>
+    </td>
+  </tr>
+  <% end %>
+</table>

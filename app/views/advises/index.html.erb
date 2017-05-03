@@ -1,8 +1,15 @@
+<div class="pull-right">
+  <%= link_to("Add a advise", new_advise_path, :class => "btn btn-default" ) %>
+</div>
 <table class="table table-bordered">
   <% @advises.each do |advise| %>
   <tr>
     <td>
       <%= link_to(advise.name, advise_path(advise)) %>
+    </td>
+    <td>
+     <%= link_to("Edit", edit_advise_path(advise)) %> |
+     <%= link_to("Destroy", advise_path(advise), :method => :delete, :data => { :confirm => "Are you sure?" }) %>
     </td>
     <td>
       <%= advise.created_at %>

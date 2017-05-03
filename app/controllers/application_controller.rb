@@ -5,5 +5,11 @@ class ApplicationController < ActionController::Base
       redirect_to root_path
     end
   end
+  def require_is_manger
+    if !current_user.manger?
+      flash[:alert] = 'You are not manger'
+      redirect_to root_path
+    end
+  end
   protect_from_forgery with: :exception
 end
