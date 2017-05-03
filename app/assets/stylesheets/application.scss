@@ -185,11 +185,24 @@
      border-color: transparent;
      color: #fff !important;
  }
+ footer {
+   color:white;
+ }
+
+ footer .footer-below {
+   padding: 25px 0;
+   background-color: #233140;
+ }
  footer .glyphicon {
      font-size: 20px;
      margin-bottom: 20px;
      color: #f4511e;
  }
+ .goodjob img {
+    vertical-align: bottom;
+    width: 30px;
+}
+
  .slideanim {visibility:hidden;}
  .slide {
      animation-name: slide;
@@ -255,7 +268,7 @@
    }
    .navbar-default .navbar-nav > li > a{
      color: #EF6C00;
-
+     font: caption;
    }
 
    .navbar-default .navbar-nav > li > a:hover,
