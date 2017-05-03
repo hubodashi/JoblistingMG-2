@@ -247,25 +247,18 @@
 <div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">联系我们</h2>
   <div class="row">
-    <div class="col-sm-5">
+    <div class="col-sm-6 col-sm-offset-3">
+    <h4>您的意见和建议是您给予我们的宝贵支持，也是我们收到宝贵财富。我们将衷心感谢和认真对待您给予我们的批评指正，如果您有什么问题欢迎给我们留言，谢谢！</h4>
+    </div>
+    <div class="col-sm-4 col-sm-offset-3">
       <p>我们将在24小时内回复您。</p>
       <p><span class="glyphicon glyphicon-map-marker"></span> 北京, 中国</p>
       <p><span class="glyphicon glyphicon-phone"></span> +86 400 888888</p>
       <p><span class="glyphicon glyphicon-envelope"></span> 123@4567.com</p>
     </div>
-    <div class="col-sm-7 slideanim">
+    <div class="col-sm-2 col-sm-offset-6">
       <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+         <button class="btn btn-default pull-right" type="submit"><%= link_to("意见和建议", new_advise_path) %></button>
         </div>
       </div>
     </div>

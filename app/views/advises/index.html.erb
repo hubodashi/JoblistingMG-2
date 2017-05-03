@@ -1,0 +1,12 @@
+<table class="table table-bordered">
+  <% @advises.each do |advise| %>
+  <tr>
+    <td>
+      <%= link_to(advise.name, advise_path(advise)) %>
+    </td>
+    <td>
+      <%= advise.created_at %>
+    </td>
+  </tr>
+  <% end %>
+</table>
