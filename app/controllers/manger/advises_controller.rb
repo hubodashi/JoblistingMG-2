@@ -6,7 +6,7 @@ class Manger::AdvisesController < ApplicationController
   end
 
   def index
-    @advises = Advise.all
+    @advises = Advise.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 5)
   end
 
   def new

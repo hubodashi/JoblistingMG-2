@@ -3,7 +3,7 @@ class AdvisesController < ApplicationController
     @advise = Advise.find(params[:id])
   end
   def index
-    @advises = Advise.all
+    @advises = Advise.all.paginate(:page => params[:page], :per_page => 5)
   end
   def new
     @advise = Advise.new
