@@ -1,9 +1,16 @@
-<h1> Add an advise </h1>
+<div class="col-md-10 col-centered">
+  <div class="panel panel-default">
+    <div class="panel-heading"><h3> Add an advise </h3></div>
+    <div class="panel-body">
 
-<%= simple_form_for [:manger,@advise] do |f| %>
+      <%= simple_form_for @advise do |f| %>
 
-<%= f.input :name %>
-<%= f.input :email %>
-<%= f.input :comment %>
-  <%= f.submit "Submit" %>
-<% end %>
+      <%= f.input :name %>
+      <%= f.input :email %>
+      <%= f.input :comment %>
+
+    <%= f.submit "Submit", class:"btn btn-danger" %>
+    <% end %>
+   </div>
+  </div>
+</div>
