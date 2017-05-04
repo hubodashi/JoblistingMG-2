@@ -3,10 +3,22 @@
     <div class="panel-heading"><h3>意见列表</h3></div>
      <div class="panel-body">
        <table class="table table-bordered table-striped custab">
+         <thead>
+            <tr>
+             <td>Name</td>
+             <td>Email</td>
+             <td>Operation</td>
+             <td>Time</td>
+            </tr>
+           </thead>
+           <tbody>
           <% @advises.each do |advise| %>
           <tr>
             <td>
               <%= link_to(advise.name, manger_advise_path(advise)) %>
+            </td>
+            <td>
+              <%= link_to(advise.email, advise_path(advise)) %>
             </td>
             <td>
               <%= link_to("Edit", edit_manger_advise_path(advise),:class => "btn btn-xs btn-info") %>
@@ -17,6 +29,7 @@
             </td>
           </tr>
           <% end %>
+         </tbody>
         </table>
       <div class="text-center">
         <%= will_paginate @advises %>

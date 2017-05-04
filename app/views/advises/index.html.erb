@@ -11,16 +11,28 @@
     <div class="panel-body">
 
       <table class="table table-bordered table-striped custab">
-        <% @advises.each do |advise| %>
-        <tr>
-          <td>
-            <%= link_to(advise.name, advise_path(advise)) %>
-          </td>
-          <td>
-            <%= advise.created_at %>
-          </td>
-        </tr>
-        <% end %>
+        <thead>
+           <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Time</td>
+           </tr>
+          </thead>
+          <tbody>
+          <% @advises.each do |advise| %>
+          <tr>
+            <td>
+              <%= link_to(advise.name, advise_path(advise)) %>
+            </td>
+            <td>
+              <%= link_to(advise.email, advise_path(advise)) %>
+            </td>
+            <td>
+              <%= advise.created_at %>
+            </td>
+          </tr>
+          <% end %>
+        </tbody>
       </table>
       <div class="text-center">
        <%= will_paginate @advises %>
