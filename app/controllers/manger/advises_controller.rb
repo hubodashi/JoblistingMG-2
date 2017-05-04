@@ -1,6 +1,7 @@
 class Manger::AdvisesController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
   before_action :require_is_manger
+  layout "manger"
   def show
     @advise = Advise.find(params[:id])
   end

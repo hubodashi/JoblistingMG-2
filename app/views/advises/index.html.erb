@@ -1,18 +1,30 @@
-<div class="pull-right">
-  <%= link_to("Add an advise", new_advise_path, :class => "btn btn-default" ) %>
-</div>
-<table class="table table-bordered">
-  <% @advises.each do |advise| %>
-  <tr>
-    <td>
-      <%= link_to(advise.name, advise_path(advise)) %>
-    </td>
-    <td>
-      <%= advise.created_at %>
-    </td>
-  </tr>
-  <% end %>
-</table>
-<div class="text-center">
- <%= will_paginate @advises %>
+<div class="col-md-10 col-centered">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3>
+        意见列表
+        <div class="pull-right">
+          <%= link_to("Add an advise", new_advise_path, :class => "btn btn-info" ) %>
+        </div>
+      </h3>
+    </div>
+    <div class="panel-body">
+
+      <table class="table table-bordered table-striped custab">
+        <% @advises.each do |advise| %>
+        <tr>
+          <td>
+            <%= link_to(advise.name, advise_path(advise)) %>
+          </td>
+          <td>
+            <%= advise.created_at %>
+          </td>
+        </tr>
+        <% end %>
+      </table>
+      <div class="text-center">
+       <%= will_paginate @advises %>
+      </div>
+    </div>
+  </div>
 </div>
